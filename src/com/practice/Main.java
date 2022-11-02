@@ -3,7 +3,7 @@ package com.practice;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello from the main thread.");
+        System.out.println(ThreadColor.ANSI_PURPLE + "Hello from the main thread.");
 
         // Initialize a new thread using the class that I created.
         Thread anotherThread = new AnotherThread();
@@ -14,11 +14,11 @@ public class Main {
         // Can create a new thread using an anonymous class
         new Thread() {
             public void run() {
-                System.out.println("Hello from the anonymous thread!");
+                System.out.println(ThreadColor.ANSI_GREEN + "Hello from the anonymous thread!");
             }
         }.start();
 
-        System.out.println("Hello again from the main thread.");
+        System.out.println(ThreadColor.ANSI_PURPLE + "Hello again from the main thread.");
 
     }
 }
