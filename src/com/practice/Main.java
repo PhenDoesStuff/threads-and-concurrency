@@ -11,9 +11,14 @@ public class Main {
         // Use the start() method to run the other thread.
         anotherThread.start();
 
+        // Can create a new thread using an anonymous class
+        new Thread() {
+            public void run() {
+                System.out.println("Hello from the anonymous thread!");
+            }
+        }.start();
+
         System.out.println("Hello again from the main thread.");
 
-        // This should throw an exception b/c threads can't be started more than once.
-        anotherThread.start();
     }
 }
