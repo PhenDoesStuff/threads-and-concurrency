@@ -16,7 +16,31 @@ public class Main {
 
 }
 
+//class Countdown {
+//
+//    public void doCountdown() {
+//        String color;
+//
+//        switch (Thread.currentThread().getName()) {
+//            case "Thread 1":
+//                color = ThreadColor.ANSI_CYAN;
+//                break;
+//            case "Thread 2":
+//                color = ThreadColor.ANSI_PURPLE;
+//                break;
+//            default:
+//                color = ThreadColor.ANSI_GREEN;
+//        }
+//
+//        for (int i = 10; i > 0; i--) {
+//            System.out.println(color + Thread.currentThread().getName() + ": i = " + i);
+//        }
+//    }
+//}
+
+// This is an example of using an instance variable. Meaning the variable is on the heap rather than the thread's stack.
 class Countdown {
+    private int i;
 
     public void doCountdown() {
         String color;
@@ -32,7 +56,7 @@ class Countdown {
                 color = ThreadColor.ANSI_GREEN;
         }
 
-        for (int i = 10; i > 0; i--) {
+        for (i = 10; i > 0; i--) {
             System.out.println(color + Thread.currentThread().getName() + ": i = " + i);
         }
     }
