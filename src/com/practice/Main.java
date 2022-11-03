@@ -12,7 +12,7 @@ public class Main {
         anotherThread.start(); // This prints out "Hello from == Another Thread =="
 
         // Example of how .run() doesn't use the other thread.
-        anotherThread.run(); // This prints out "Hello from main"
+//        anotherThread.run(); // This prints out "Hello from main"
         // Calls method in other class, but doesn't use a new thread
 
         // Can create a new thread using an anonymous class
