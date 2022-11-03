@@ -1,5 +1,7 @@
 package com.counter;
 
+import com.threadcolor.ThreadColor;
+
 public class Main {
     public static void main(String[] args) {
         Countdown countdown = new Countdown();

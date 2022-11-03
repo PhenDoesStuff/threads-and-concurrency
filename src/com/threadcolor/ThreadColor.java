@@ -1,4 +1,4 @@
-package com.practice;
+package com.threadcolor;
 
 public class ThreadColor {
     public static final String ANSI_RESET = "\u001B[0m";
