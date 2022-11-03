@@ -7,9 +7,13 @@ public class Main {
 
         // Initialize a new thread using the class that I created.
         Thread anotherThread = new AnotherThread();
-
+        anotherThread.setName("== Another Thread ==");
         // Use the start() method to run the other thread.
-        anotherThread.start();
+        anotherThread.start(); // This prints out "Hello from == Another Thread =="
+
+        // Example of how .run() doesn't use the other thread.
+        anotherThread.run(); // This prints out "Hello from main"
+        // Calls method in other class, but doesn't use a new thread
 
         // Can create a new thread using an anonymous class
         new Thread() {
