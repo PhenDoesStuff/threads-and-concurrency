@@ -1,5 +1,7 @@
 package com.practice;
 
+import com.threadcolor.ThreadColor;
+
 public class AnotherThread extends Thread {
     @Override
     public void run() {
